@@ -16,10 +16,5 @@ namespace WpfAppMultiLanguage
         {
             // Perform any other configuration before the application starts
         }
-
-        protected override void OnLaunch()
-        {
-            base.OnLaunch();
-        }
     }
 }
