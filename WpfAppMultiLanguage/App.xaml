@@ -4,10 +4,14 @@
              xmlns:local="clr-namespace:WpfAppMultiLanguage"
              xmlns:s="https://github.com/canton7/Stylet">
     <Application.Resources>
-        <s:ApplicationLoader>
-            <s:ApplicationLoader.Bootstrapper>
-                <local:Bootstrapper />
-            </s:ApplicationLoader.Bootstrapper>
-        </s:ApplicationLoader>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <s:ApplicationLoader>
+                    <s:ApplicationLoader.Bootstrapper>
+                        <local:Bootstrapper />
+                    </s:ApplicationLoader.Bootstrapper>
+                </s:ApplicationLoader>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
