@@ -2,7 +2,6 @@
 using Stylet;
 using StyletIoC;
 using WpfAppMultiLanguage.Pages;
-using WpfExtensions.Xaml;
 
 namespace WpfAppMultiLanguage
 {
@@ -21,7 +20,6 @@ namespace WpfAppMultiLanguage
         protected override void OnLaunch()
         {
             base.OnLaunch();
-            I18nManager.Instance.Add(LQClass.AdminForWPF.I18nResources.UiResource.ResourceManager);
         }
     }
 }

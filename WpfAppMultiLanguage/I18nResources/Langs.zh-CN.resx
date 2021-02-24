@@ -121,6 +121,6 @@
     <value>确定</value>
   </data>
   <data name="hello" xml:space="preserve">
-    <value>你好</value>
+    <value>世界, 你好</value>
   </data>
 </root>

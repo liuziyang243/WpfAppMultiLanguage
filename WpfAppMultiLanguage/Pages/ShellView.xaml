@@ -4,20 +4,33 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppMultiLanguage.Pages"
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        lex:LocalizeDictionary.DesignCulture="en-US"
+        lex:ResxLocalizationProvider.DefaultAssembly="WpfAppMultiLanguage"
+        lex:ResxLocalizationProvider.DefaultDictionary="I18nResources"
         mc:Ignorable="d"
         Title="Stylet Start Project" Height="450" Width="800"
         xmlns:s="https://github.com/canton7/Stylet"
-        xmlns:markup="clr-namespace:WpfExtensions.Xaml.Markup;assembly=WpfExtensions.Xaml"
         d:DataContext="{d:DesignInstance local:ShellViewModel}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <TextBlock Text="{markup:I18n {x:Static languages:UiStrings.MainWindow_Title}}" />
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock Text="{lex:Loc hello}"></TextBlock>
+            <Button Content="{lex:Loc btn_ok}" Width="90" Height="25"></Button>
+        </StackPanel>
 
         <TextBlock Grid.Row="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">
             Hello Stylet!
         </TextBlock>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Margin="25,5,5,5" Height="25" Width="90" Content="切换到中文" Command="{s:Action SwitchToCn}"></Button>
+            <Button Margin="5" Height="25" Width="90" Content="切换到英文" Command="{s:Action SwitchToEng}"></Button>
+        </StackPanel>
     </Grid>
 </Window>

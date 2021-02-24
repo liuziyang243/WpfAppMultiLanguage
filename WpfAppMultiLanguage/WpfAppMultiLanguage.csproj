@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -52,8 +53,11 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WpfExtensions.Xaml, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WpfExtensions.Xaml.1.1.0\lib\net45\WpfExtensions.Xaml.dll</HintPath>
+    <Reference Include="WPFLocalizeExtension, Version=3.8.0.0, Culture=neutral, PublicKeyToken=c726e0262981a1eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFLocalizeExtension.3.8.0\lib\net452\WPFLocalizeExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="XAMLMarkupExtensions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c726e0262981a1eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\XAMLMarkupExtensions.2.0.0\lib\net452\XAMLMarkupExtensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -68,22 +72,22 @@
     <Compile Include="Bootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="I18nResources\language_en_US.Designer.cs">
+    <Compile Include="I18nResources\Langs.en-US.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>language_en_US.resx</DependentUpon>
+      <DependentUpon>Langs.en-US.resx</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="I18nResources\language_in_ID.Designer.cs">
+    <Compile Include="I18nResources\Langs.in-ID.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>language_in_ID.resx</DependentUpon>
+      <DependentUpon>Langs.in-ID.resx</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="I18nResources\Language_zh_CN.Designer.cs">
+    <Compile Include="I18nResources\Langs.zh-CN.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Language_zh_CN.resx</DependentUpon>
+      <DependentUpon>Langs.zh-CN.resx</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Pages\ShellView.xaml.cs">
@@ -103,19 +107,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="I18nResources\language_en_US.resx">
+    <EmbeddedResource Include="I18nResources\Langs.en-US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>language_en_US.Designer.cs</LastGenOutput>
+      <LastGenOutput>Langs.en-US.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="I18nResources\language_in_ID.resx">
+    <EmbeddedResource Include="I18nResources\Langs.in-ID.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>language_in_ID.Designer.cs</LastGenOutput>
+      <LastGenOutput>Langs.in-ID.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="I18nResources\Language_zh_CN.resx">
+    <EmbeddedResource Include="I18nResources\Langs.zh-CN.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Language_zh_CN.Designer.cs</LastGenOutput>
+      <LastGenOutput>Langs.zh-CN.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
